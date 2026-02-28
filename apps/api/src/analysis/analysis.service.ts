@@ -15,13 +15,13 @@ export class AnalysisService {
   ) {}
 
   async createAnalysis(userId: string, dto: CreateAnalysisDto) {
-    const { repoName } = this.githubService.parsePrUrl(dto.prUrl);
+    const { repo } = this.githubService.parsePrUrl(dto.prUrl);
 
     const analysis = await this.prisma.analysis.create({
       data: {
         userId,
         prUrl: dto.prUrl,
-        repoName: repoName ?? dto.prUrl,
+        repoName: repo ?? dto.prUrl,
         status: 'PENDING',
       },
     });
