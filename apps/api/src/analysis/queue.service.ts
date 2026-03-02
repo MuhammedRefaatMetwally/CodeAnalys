@@ -1,4 +1,11 @@
-import { Injectable, OnModuleInit, OnModuleDestroy, forwardRef, Inject } from '@nestjs/common';
+import {
+  Injectable,
+  OnModuleInit,
+  OnModuleDestroy,
+  forwardRef,
+  Inject,
+  Logger,
+} from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { Queue, Worker, Job } from 'bullmq';
 import { AnalysisService } from './analysis.service';
@@ -7,7 +14,7 @@ export const ANALYSIS_QUEUE = 'analysis-queue';
 
 @Injectable()
 export class QueueService implements OnModuleInit, OnModuleDestroy {
-    private queue: Queue;
+  private queue: Queue;
   private worker: Worker;
 
   constructor(
@@ -33,11 +40,21 @@ export class QueueService implements OnModuleInit, OnModuleDestroy {
     );
 
     this.worker.on('completed', (job) => {
-      console.log(`Job ${job.id} completed`);
+      Logger.log(
+        `✅ Job ${job.id} completed — analysisId: ${job.data.analysisId}`,
+        'QueueWorker',
+      );
     });
 
     this.worker.on('failed', (job, err) => {
-      console.error(`Job ${job?.id} failed:`, err.message);
+      Logger.error(`❌ Job ${job?.id} failed — ${err.message}`, 'QueueWorker');
+    });
+
+    this.worker.on('active', (job) => {
+      Logger.log(
+        `⚙️  Job ${job.id} started — analysisId: ${job.data.analysisId}`,
+        'QueueWorker',
+      );
     });
   }
 
