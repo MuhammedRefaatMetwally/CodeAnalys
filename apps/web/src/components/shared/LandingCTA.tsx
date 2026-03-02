@@ -7,23 +7,21 @@ export function LandingCTA() {
   const { isAuthenticated } = useAuthStore();
   const loggedIn = isAuthenticated();
 
-  const href = loggedIn ? '/dashboard' : '/register';
-  const label = loggedIn ? 'Go to Dashboard →' : 'Start Reviewing Free →';
-
   return (
-    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+    <div className="flex flex-wrap items-center gap-3">
       <Link
-        href={href}
-        className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-400 text-black font-bold px-8 py-4 rounded-xl text-base transition-all duration-200 hover:scale-105"
+        href={loggedIn ? '/dashboard' : '/register'}
+        className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-400 text-black font-semibold px-5 py-2.5 rounded-lg text-sm transition-all duration-200 hover:shadow-lg hover:shadow-green-500/20"
       >
-        {label}
+        {loggedIn ? 'Go to Dashboard' : 'Get started free'}
+        <span className="text-black/70">→</span>
       </Link>
       {!loggedIn && (
         <Link
           href="/login"
-          className="inline-flex items-center justify-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-800 font-mono px-8 py-4 rounded-xl text-sm transition-colors"
+          className="inline-flex items-center gap-2 text-zinc-400 hover:text-white text-sm font-mono transition-colors px-2 py-2.5"
         >
-          Sign In
+          Sign in
         </Link>
       )}
     </div>
