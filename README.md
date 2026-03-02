@@ -134,10 +134,3 @@ FRONTEND_URL=http://localhost:3000
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:3001
 ```
-
----
-
-## Author
-
-**Muhammed Refaat Metwally**
-[LinkedIn](https://www.linkedin.com/in/muhammedrefaat/) · [GitHub](https://github.com/MuhammedRefaatMetwally/)
