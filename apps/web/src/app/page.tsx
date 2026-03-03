@@ -53,9 +53,7 @@ export default function LandingPage() {
     >
       <LandingNav />
 
-      {/* ── HERO ──────────────────────────────────────────── */}
       <section className="relative px-6 pt-20 pb-28 overflow-hidden">
-        {/* Top glow */}
         <div
           className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] pointer-events-none"
           style={{
@@ -64,11 +62,9 @@ export default function LandingPage() {
           }}
         />
 
-        {/* Horizontal rule accent */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-green-500/30 to-transparent" />
 
         <div className="max-w-5xl mx-auto relative">
-          {/* Eyebrow pill */}
           <div className="inline-flex items-center gap-2 border border-zinc-800 rounded-full px-3.5 py-1.5 mb-10">
             <span className="relative flex h-1.5 w-1.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75" />
