@@ -1,4 +1,4 @@
-# DevLens — AI-Powered PR Code Review
+# CodeAnalys — AI-Powered PR Code Review
 
 > Paste a GitHub PR URL. Get instant AI-powered feedback on code quality, security, and best practices.
 
@@ -10,7 +10,7 @@
 
 ---
 
-## What is DevLens?
+## What is CodeAnalys?
 
 DevLens is a full-stack developer tool that automates code review using AI.
 
