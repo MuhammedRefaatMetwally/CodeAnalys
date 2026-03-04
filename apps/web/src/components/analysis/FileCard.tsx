@@ -14,7 +14,6 @@ export function FileCard({ file }: FileCardProps) {
 
   return (
     <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden">
-      {/* File Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-5 py-4 border-b border-zinc-800">
         <span className="font-mono text-sm text-green-400 break-all">
           {file.filename}
@@ -41,12 +40,10 @@ export function FileCard({ file }: FileCardProps) {
         </div>
       </div>
 
-      {/* File Summary */}
       <div className="px-5 py-4 border-b border-zinc-800/50">
         <p className="text-zinc-400 text-sm leading-relaxed">{file.summary}</p>
       </div>
 
-      {/* Issues */}
       {file.issues.length === 0 ? (
         <div className="px-5 py-4 text-zinc-600 text-sm font-mono">
           No issues detected in this file.

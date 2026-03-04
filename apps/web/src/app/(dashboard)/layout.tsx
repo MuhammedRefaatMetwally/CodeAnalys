@@ -23,7 +23,7 @@ export default function DashboardLayout({
           <div className="flex items-center gap-2.5">
             <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
             <span className="font-mono text-xs text-green-500 tracking-[0.2em] uppercase">
-              DevLens
+              CodeAnalys
             </span>
           </div>
           <div className="flex items-center gap-5">

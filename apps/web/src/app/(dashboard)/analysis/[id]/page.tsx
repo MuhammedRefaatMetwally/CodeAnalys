@@ -70,7 +70,6 @@ export default function AnalysisPage() {
 
   return (
     <div className="space-y-8">
-      {/* Back */}
       <button
         onClick={() => router.push('/dashboard')}
         className="flex items-center gap-2 text-zinc-500 hover:text-white transition-colors font-mono text-sm group"
@@ -79,7 +78,6 @@ export default function AnalysisPage() {
         Back to Dashboard
       </button>
 
-      {/* Header */}
       <div className="space-y-1">
         <h1
           className="text-2xl sm:text-3xl font-black text-white break-words"
@@ -92,7 +90,6 @@ export default function AnalysisPage() {
         </p>
       </div>
 
-      {/* States */}
       {isLoading && <LoadingSkeleton />}
 
       {!isLoading &&
@@ -117,18 +114,14 @@ export default function AnalysisPage() {
 
       {!isLoading && analysis?.status === 'COMPLETED' && result && (
         <div className="space-y-8">
-          {/* Score + Summary Card */}
           <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 sm:p-8">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              {/* Score Ring */}
               <div className="shrink-0">
                 <ScoreRing score={result.overallScore} />
               </div>
 
-              {/* Divider */}
               <div className="hidden md:block w-px self-stretch bg-zinc-800" />
 
-              {/* Summary + Stats */}
               <div className="flex-1 space-y-6 text-center md:text-left">
                 <div>
                   <p className="text-xs font-mono text-zinc-500 uppercase tracking-widest mb-3">
@@ -139,7 +132,6 @@ export default function AnalysisPage() {
                   </p>
                 </div>
 
-                {/* Stats Row */}
                 <div className="flex flex-wrap gap-3 justify-center md:justify-start">
                   <StatCard
                     label="Files Reviewed"
@@ -160,7 +152,6 @@ export default function AnalysisPage() {
             </div>
           </div>
 
-          {/* Files Section */}
           <div className="space-y-4">
             <p className="text-xs font-mono text-zinc-500 uppercase tracking-widest">
               File Analysis — {result.files.length} files reviewed
