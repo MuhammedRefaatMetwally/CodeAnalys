@@ -102,7 +102,7 @@ export default function LandingPage() {
               </h1>
 
               <p className="text-zinc-400 text-base leading-relaxed mb-8 max-w-md font-light">
-                Paste a GitHub PR URL. DevLens fetches every changed file,
+                Paste a GitHub PR URL. CodeAnalys fetches every changed file,
                 sends it to Gemini AI, and returns a structured quality
                 report — in under 30 seconds.
               </p>
@@ -144,7 +144,7 @@ export default function LandingPage() {
                     <div className="w-2.5 h-2.5 rounded-full bg-green-500/60" />
                   </div>
                   <span className="font-mono text-[11px] text-zinc-600">
-                    devlens · analysis
+                    CodeAnalys · analysis
                   </span>
                   <div className="w-12" />
                 </div>
@@ -154,7 +154,7 @@ export default function LandingPage() {
                   <div className="flex items-start gap-3">
                     <span className="text-zinc-700 mt-px">$</span>
                     <span className="text-zinc-300">
-                      devlens analyze{' '}
+                      CodeAnalys analyze{' '}
                       <span className="text-green-400">
                         github.com/acme/api/pull/94
                       </span>
@@ -302,7 +302,7 @@ export default function LandingPage() {
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
             <span className="font-mono text-[11px] text-zinc-600 tracking-[0.2em] uppercase">
-              DevLens
+              CodeAnalys
             </span>
           </div>
           <div className="flex items-center gap-4">

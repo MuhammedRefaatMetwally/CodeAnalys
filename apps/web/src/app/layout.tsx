@@ -16,7 +16,7 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'DevLens — AI Code Review',
+  title: 'CodeAnalys — AI Code Review',
   description: 'Instant AI-powered code review for your Pull Requests',
 };
 

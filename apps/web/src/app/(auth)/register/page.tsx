@@ -38,7 +38,7 @@ export default function RegisterPage() {
     onSuccess: (data) => {
       setAuth(data.user, data.token);
       toast.success("Account created!", {
-        description: `Welcome to DevLens, ${data.user.name}!`,
+        description: `Welcome to CodeAnalys, ${data.user.name}!`,
       });
       setTimeout(() => router.push("/dashboard"), 1000);
     },
@@ -55,7 +55,7 @@ export default function RegisterPage() {
         <div className="flex items-center gap-2 mb-10">
           <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
           <span className="font-mono text-sm text-green-500 tracking-widest uppercase">
-            DevLens
+            CodeAnalys
           </span>
         </div>
 

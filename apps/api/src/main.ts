@@ -26,6 +26,6 @@ async function bootstrap() {
   const port = process.env.PORT ?? 3001;
   await app.listen(port);
 
-  Logger.log(`DevLens API running on http://localhost:${port}`, 'Bootstrap');
+  Logger.log(`CodeAnalys API running on http://localhost:${port}`, 'Bootstrap');
 }
 bootstrap();
