@@ -101,7 +101,6 @@ export default function DashboardPage() {
 
   return (
     <div>
-      {/* Header */}
       <div className="mb-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
           <p className="font-mono text-xs text-zinc-600 uppercase tracking-widest mb-2">
@@ -116,7 +115,6 @@ export default function DashboardPage() {
         )}
       </div>
 
-      {/* Submit Form */}
       <div className="border border-zinc-800 rounded-lg p-5 mb-10 bg-zinc-900/30">
         <p className="font-mono text-xs text-zinc-600 uppercase tracking-widest mb-3">
           New Analysis
@@ -138,7 +136,6 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      {/* Analyses List */}
       <div>
         <h2 className="text-xs font-mono text-zinc-500 uppercase tracking-widest mb-4">
           Recent Analyses

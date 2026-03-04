@@ -75,9 +75,7 @@ export default function LandingPage() {
             </span>
           </div>
 
-          {/* Two-column layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            {/* Left: Copy */}
             <div>
               <h1
                 className="leading-[1.08] tracking-tight mb-6"
@@ -109,7 +107,6 @@ export default function LandingPage() {
 
               <LandingCTA />
 
-              {/* Micro trust signals */}
               <div className="flex items-center gap-5 mt-8">
                 {[
                   ['No sign-up fee', '✓'],
@@ -124,9 +121,7 @@ export default function LandingPage() {
               </div>
             </div>
 
-            {/* Right: Terminal preview */}
             <div className="relative">
-              {/* Glow behind terminal */}
               <div
                 className="absolute -inset-4 rounded-2xl pointer-events-none"
                 style={{
@@ -136,7 +131,6 @@ export default function LandingPage() {
               />
 
               <div className="relative bg-zinc-950 border border-zinc-800/80 rounded-xl overflow-hidden shadow-2xl">
-                {/* Window chrome */}
                 <div className="flex items-center justify-between px-4 py-3 border-b border-zinc-800/80 bg-zinc-900/60">
                   <div className="flex items-center gap-1.5">
                     <div className="w-2.5 h-2.5 rounded-full bg-red-500/60" />
@@ -149,7 +143,6 @@ export default function LandingPage() {
                   <div className="w-12" />
                 </div>
 
-                {/* Terminal body */}
                 <div className="p-5 font-mono text-[13px] space-y-3">
                   <div className="flex items-start gap-3">
                     <span className="text-zinc-700 mt-px">$</span>
@@ -174,7 +167,6 @@ export default function LandingPage() {
                     ))}
                   </div>
 
-                  {/* Result card */}
                   <div className="mt-2 border border-zinc-800 rounded-lg p-4 bg-zinc-900/50 space-y-3">
                     <div className="flex items-center justify-between">
                       <span className="text-zinc-500 text-xs uppercase tracking-widest">
@@ -217,7 +209,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── HOW IT WORKS ──────────────────────────────────── */}
       <section className="px-6 py-24 border-t border-zinc-900">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-4 mb-16">
@@ -241,7 +232,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── FEATURES ──────────────────────────────────────── */}
       <section className="px-6 py-24 border-t border-zinc-900">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-4 mb-16">
@@ -268,7 +258,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── BOTTOM CTA ────────────────────────────────────── */}
       <section className="px-6 py-24 border-t border-zinc-900">
         <div className="max-w-5xl mx-auto">
           <div
@@ -296,7 +285,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── FOOTER ────────────────────────────────────────── */}
       <footer className="border-t border-zinc-900 px-6 py-5">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-2">

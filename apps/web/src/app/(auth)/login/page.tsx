@@ -50,7 +50,6 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen bg-[#080808] flex">
-      {/* Left Panel */}
       <div
         className="hidden lg:flex w-1/2 relative overflow-hidden flex-col justify-between p-12"
         style={{
@@ -94,7 +93,6 @@ export default function LoginPage() {
         </div>
       </div>
 
-      {/* Right Panel */}
       <div className="flex-1 flex items-center justify-center p-8">
         <div className="w-full max-w-sm">
           <div className="mb-8">
